@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="title">
+
+        </title>
+    </head>
+    <style>
+        h1 {
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        h4 {
+            color: white;
+        }
+
+        h5 {
+            color: white;
+        }
+
+        #beanCount{
+            left:0px;
+            top:25px;
+        }
+
+        #mainButton{
+            position: absolute;
+            left:40%;
+            top:100px;
+
+        }
+
+        #upgrades{
+            height: 1009px;
+            position: absolute;
+            right:0px;
+            top:0px;
+            overflow-y: auto;
+        }
+
+        #upgradeTable{
+            border: 1px solid white;
+        }
+
+        #about{
+            position: absolute;
+            bottom:0px;
+        }
+
+    </style>
+    <script src="./game.js"></script>
+    <body style="background-color:black;">
+        <div id="beanCount">
+            <table>
+                <td>
+                <img src="https://i5.walmartimages.com/asr/529e94f1-a002-46a3-b9dd-b1727fc2aa79_1.61176e4c3b4a8f1e282c5cc9cb6d5a21.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" width=50 height=50>
+                </td>
+                <td>
+                <h1 id="totalBeans"></h1>
+                </td>
+            </table>
+        </div>
+
+        <div id="mainButton">
+            <img id="mainBeanImg" src="https://pyxis.nymag.com/v1/imgs/4e7/109/9ca3a0b4352ca3ff74b89cb208ceda6ab5-kidney-bean.rsquare.w1200.jpg" width=200 height=200 onmouseup="addBean()">
+        </div>
+
+        <div id="upgrades">
+            <table id="upgradeTable" style="border: 1px solid white">
+                <tr>
+                    <td id="upgradeTable">
+                        <h2>Lima Beans - Worth 1 Bean</h2>
+                        <h3 id="limaBeanUpgrades"></h3>
+                        <h3 id="limaBeanUpgradePriceID"></h3>
+                        <img src="https://www.clipartmax.com/png/middle/12-124067_free-green-bean-cliparts-download-free-clip-art-free-green-jelly-bean.png" width=200 height=100 onclick="addLimaUpgrade()" role="button">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="upgradeTable">
+                        <h2>Pinto Beans - Worth 5 Beans</h2>
+                        <h3 id="pintoBeanUpgrades"></h3>
+                        <h3 id="pintoBeanUpgradePriceID"></h3>
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/615VPoj-BKL._SL1500_.jpg" width=200 height=100 onclick="addPintoUpgrade()" role="button">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="upgradeTable">
+                        <h2>Kidney Beans - Worth 10 Beans</h2>
+                        <h3 id="kidneyBeanUpgrades"></h3>
+                        <h3 id="kidneyBeanUpgradePriceID"></h3>
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Kidney-beans-8496667.jpg?quality=90&resize=960%2C872" width=200 height=100 onclick="addKidneyUpgrade()" role="button">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="upgradeTable">
+                        <h2>Coffee Beans - Worth 25 Beans</h2>
+                        <h3 id="coffeeBeanUpgrades"></h3>
+                        <h3 id="coffeeBeanUpgradePriceID"></h3>
+                        <img src="https://thepetridish.my/wp-content/uploads/2017/11/2759423-0-fresh-coffee-beans-300x200.png" width=200 height=100 onclick="addCoffeeUpgrade()" role="button">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="about">
+            <h5>CyberBean 2020 is a game made by Linkpro4</h5>
+        </div>
+    </body>
+</html>

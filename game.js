@@ -83,6 +83,7 @@ function update() {
 
 function update2() {
     document.getElementById("totalBeans").innerHTML = "Beans: " + beans;
+    document.getElementById("beanspersecond").innerHTML = "BPS: " + autoBeans;
     document.getElementById("title").innerHTML = "Beans: " + beans;
     
     document.getElementById("limaBeanUpgrades").innerHTML = "Lima Beans: " + limaBeans;
